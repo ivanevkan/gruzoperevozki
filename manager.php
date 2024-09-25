@@ -2,7 +2,7 @@
 include 'temp/head.php';
 session_start();
 include 'temp/database.php';
-include 'temp/nav.php';
+include 'temp/navmanager.php';
 ?>
 
 <?php
