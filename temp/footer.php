@@ -11,10 +11,15 @@
                 
                 <a class="phone" href="#"><i class="fa fa-phone"></i>8(861)212-12-51</a>&nbsp;&nbsp;<br>
                 <a class="envelope" href="#"><i class="fa fa-envelope"></i>gruz@mail.ru</a><br>
-              
-                Юр. адрес: 344047. г.Ростов-на-Дону.<br> ул. Бабушкина, 38/3
-            </div>
-  
+               
+                Юр. адрес: 344047. г.Ростов-на-Дону.<br> ул.Красноармейская, 10
+                </div>
+                <div class="col-4">   
+            <div class="textcopy"style="text-align:center;margin-left:5px; margin-top:30px;">
+
+            <p>Copyright 2024</p>
+</div>
+</div>
              <div class="col-4">
                 <div class="text">
                     <h5>Подписывайтесь на нас в социальных сетях:</h5>
@@ -26,6 +31,5 @@
            
             
 
-<div class="textcopy"style="text-align:center;margin-left:5px;">
- <p>Copyright 2024</p>
+
     </footer>
