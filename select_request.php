@@ -2,6 +2,13 @@
 include 'temp/head.php';
 include "temp/nav.php";
 include 'temp/database.php';
+
+if (!empty($_POST['request_decline'])) {
+    $req = $_POST['request_decline'];
+    $sql = //"DELETE FROM `request` WHERE `request_id` = '$req'"; - поменять запрос, если надо
+    //$result=$mysqli->query($sql);
+    header("Location: select_request.php");
+}
 ?>
 
 <main>
@@ -27,7 +34,7 @@ include 'temp/database.php';
                     </thead>
                     <tbody>
                         <?php
-                            $sql = "SELECT * FROM `request` WHERE `request_status` = 'Отправлен' ORDER BY `request`.`request_delivery_date` ASC";
+                            $sql = "SELECT * FROM `request` WHERE `request_status` = 'Создан' ORDER BY `request`.`request_delivery_date` ASC";
                             $result=$mysqli->query($sql);
                             foreach ($result as $row) {
                                 echo'
@@ -44,7 +51,7 @@ include 'temp/database.php';
                                         <td>'.$row['cargo_dimensions'].'</td>
 
                                         <td>
-                                            <form action="" method="POST">
+                                            <form action="request_set_details.php" method="POST">
                                                 <button class="btn btn-secondary" type="submit" value="'.$row['request_id'].'" name="request_accept">Рассмотреть заявку</button>
                                             </form>
                                         </td>
